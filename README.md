@@ -3,6 +3,7 @@
 A higher order component is a pattern where a function takes a component as an argument and returns a new component.
 
 A simple example: const NewComponent = higherOrderComponent(originalComponent);
+
 Normal naming convention: const WithCounter = WrappedComponent(ClickCounter);
 
 Side Note: a HOC doesn’t modify the input component, nor does it use inheritance to copy its behavior. Rather, a HOC composes the original component by wrapping it in a container component. A HOC is a pure function with zero side-effects.
