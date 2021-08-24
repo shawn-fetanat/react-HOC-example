@@ -8,7 +8,7 @@ Normal naming convention: `const WithFeature = WrappedComponent(OrignalComponent
 
 So my export statement in my components looks like this: `export default withCounter(ClickCounter);`
 
-Notice how the HOC starts with a lowercase letter. Doing it this way distinguishes it from regular components and because it reads out as ClickCounter withCounter anyone that reads your code will immediately know this component is providing the component it wraps with some sort feature. 
+Notice how the HOC starts with a lowercase letter. Doing it this way distinguishes it from regular components and because it reads out as ClickCounter withCounter anyone that reads your code will immediately know this component is providing the OriginalComponent it wraps with some sort of feature. 
 
 Side Note: a HOC doesn’t modify the input component, nor does it use inheritance to copy its behavior. Rather, a HOC composes the original component by wrapping it in a container component. A HOC is a pure function with zero side-effects.
 
